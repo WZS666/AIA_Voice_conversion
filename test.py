@@ -33,7 +33,7 @@ if __name__ == '__main__':
     spec_tensor = torch.from_numpy(spec_expand).type(torch.FloatTensor)
     c = Variable(torch.from_numpy(np.array([int(args.target)]))).cuda()
 
-    c = torch.tensor(c).to(torch.int64) # 在windows上執行要轉成int64
+    #c = torch.tensor(c).to(torch.int64) # 在windows上執行要轉成int64
 
     result = solver.test_step(spec_tensor, c, gen=args.use_gen)
     result = result.squeeze(axis=0).transpose((1, 0))
