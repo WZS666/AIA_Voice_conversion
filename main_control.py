@@ -126,10 +126,9 @@ class App(QMainWindow):
 
     if self.filename == 'record.wav':
         os.remove('record.wav')
-        print('removed record')
+        os.remove('result.wav')
     else:
         os.remove('result.wav')
-        print('removed result')
     
 
 if __name__ == "__main__":
