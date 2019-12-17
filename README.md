@@ -2,7 +2,9 @@
 
 # How to run this project?
 https://ppt.cc/fB7oSx
+
 install all package (pyQt5、torch、pickle、h5py etc.)
+
 python main_control.py
 
 # Reference
